@@ -1,0 +1,68 @@
+:root {
+  --color-pink: #FF9EB5;
+  --color-pink-dark: #FF6B8B;
+  --color-blue: #89CFF0;
+  --color-blue-dark: #4B9CD3;
+  --color-bg: #FDFBF7;
+  --color-text: #2C3E50;
+  --color-white: #FFFFFF;
+  --color-gold: #D4AF37;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255, 158, 181, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(137, 207, 240, 0.1) 0%, transparent 20%);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-pink-dark), var(--color-blue-dark));
+  color: white;
+  padding: 12px 24px;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  filter: brightness(1.1);
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.title-gradient {
+  background: linear-gradient(to right, var(--color-pink-dark), var(--color-blue-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
